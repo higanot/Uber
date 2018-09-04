@@ -14,6 +14,8 @@
 		16678EE0213EA0E900F12FEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16678EDE213EA0E900F12FEB /* LaunchScreen.storyboard */; };
 		16678EEB213EA0E900F12FEB /* UberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16678EEA213EA0E900F12FEB /* UberTests.swift */; };
 		16678EF6213EA0E900F12FEB /* UberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16678EF5213EA0E900F12FEB /* UberUITests.swift */; };
+		16678F05213EA17D00F12FEB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16678F04213EA17D00F12FEB /* MapKit.framework */; };
+		16678F07213EA18800F12FEB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16678F06213EA18800F12FEB /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		16678EF1213EA0E900F12FEB /* UberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16678EF5213EA0E900F12FEB /* UberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberUITests.swift; sourceTree = "<group>"; };
 		16678EF7213EA0E900F12FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16678F04213EA17D00F12FEB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		16678F06213EA18800F12FEB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16678F07213EA18800F12FEB /* CoreLocation.framework in Frameworks */,
+				16678F05213EA17D00F12FEB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 				16678EE9213EA0E900F12FEB /* UberTests */,
 				16678EF4213EA0E900F12FEB /* UberUITests */,
 				16678ED3213EA0E400F12FEB /* Products */,
+				16678F03213EA17D00F12FEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +130,15 @@
 				16678EF7213EA0E900F12FEB /* Info.plist */,
 			);
 			path = UberUITests;
+			sourceTree = "<group>";
+		};
+		16678F03213EA17D00F12FEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16678F06213EA18800F12FEB /* CoreLocation.framework */,
+				16678F04213EA17D00F12FEB /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

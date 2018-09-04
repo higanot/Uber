@@ -7,19 +7,23 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+  
+  @IBOutlet weak var mabView: MKMapView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    mabView.delegate = self
+    
+    let span = MKCoordinateSpanMake(0.05, 0.05)
+    let location = CLLocationCoordinate2D(latitude: 35.6895000, longitude: 139.6917100)
+    
+    let region = MKCoordinateRegionMake(location, span)
+    mabView.setRegion(region, animated: true)
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
 }
 
